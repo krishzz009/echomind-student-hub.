@@ -160,6 +160,25 @@ body.auth-locked .app,body.auth-locked .mobile-nav{display:none!important}
 .hero-card:hover{transform:translateY(-2px)}
 .logo,.auth-logo{animation:emGlow 4s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.section.active .panel,.section.active .hero-card,.section.active .quote-card,.section.active .stat,.section.active .feature-card,.section.active .setting-card,.logo,.auth-logo{animation:none!important}.hero-card:hover{transform:none}}
+
+/* Final consistency pass: light mode must style the More drawer and bottom navigation too. */
+:root[data-theme="light"] .mobile-more-menu{background:rgba(248,251,255,.98);border-color:#d9e4f2;box-shadow:0 18px 55px #24456b24;color:#17243a;backdrop-filter:blur(22px)}
+:root[data-theme="light"] .mobile-more-grid button{background:linear-gradient(145deg,#fff,#f4f8ff);border-color:#dce6f3;color:#20324b;box-shadow:0 3px 12px #36577b0a}
+:root[data-theme="light"] .mobile-more-grid button small{color:#64758d}
+:root[data-theme="light"] .mobile-more-grid button:hover,:root[data-theme="light"] .mobile-more-grid button.active{background:#e8f1ff;border-color:#a9c8f5;color:#214c85}
+:root[data-theme="light"] .mobile-more-head .tiny-btn{background:#fff;color:#52647c;border-color:#d8e3f1}
+:root[data-theme="light"] .mobile-nav{background:rgba(249,251,255,.96);border-top-color:#dce5f2;box-shadow:0 -10px 28px #28486b12}
+:root[data-theme="light"] .mobile-nav button{color:#65758c}
+:root[data-theme="light"] .mobile-nav button.active{background:#e7f0ff;color:#24549a;border:1px solid #c7dcfa}
+:root[data-theme="light"] .mobile-nav button:hover{background:#edf4ff;color:#24549a}
+:root[data-theme="light"] .mobile-more-menu .mobile-more-head strong{color:#17243a}
+/* Refined interactions: quick, calm motion without distracting movement. */
+.mobile-more-grid button{transition:transform .18s ease,background .18s ease,border-color .18s ease,box-shadow .18s ease}
+.mobile-more-grid button:active{transform:scale(.985)}
+.setting-card,.feature-card,.stat,.quick,.note-card{animation:softRise .42s ease both}
+@keyframes softRise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
 </style></head>
 <body class="auth-locked">
 <div class="auth-screen" id="authScreen">
