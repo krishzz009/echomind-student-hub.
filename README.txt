@@ -1,4 +1,4 @@
-ECHOMIND STUDENT HUB — RESPONSIVE STUDY WEBSITE
+ECHOMIND STUDENT HUB v4 — REFINED RESPONSIVE STUDY WEBSITE
 ================================================
 
 Features
@@ -8,8 +8,7 @@ Features
 - Chapter summary helper based on text you saved
 - Practice questions extracted from chapter notes, with show/hide answers
 - Ask a question and retrieve matching sentences from the selected saved chapter
-- Focus timer with custom 1–180 minute sessions and completion chime
-- Session log, progress stats, backup export and responsive mobile navigation
+- Focus timer, session log, progress stats and data export
 - Local browser saving and offline-friendly static website
 
 HONEST LIMITATION
@@ -47,3 +46,9 @@ UPDATE v2 FEATURES
 
 DEPLOY UPDATE
 Upload the updated project files to the existing GitHub repository (replace index.html and sw.js, and update README.txt). Vercel redeploys automatically after the commit. If an old version remains on your phone, refresh the site or close/reopen the tab; service worker cache was bumped to v2.
+
+
+V4 VISUAL UPDATE
+- Refined contrast, surfaces, borders, spacing and mobile layout.
+- Improved focus, study companion, note cards, navigation and timer controls styling.
+- This is a frontend styling update; existing browser-local data is not intentionally cleared.
