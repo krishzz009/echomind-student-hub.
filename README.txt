@@ -8,7 +8,8 @@ Features
 - Chapter summary helper based on text you saved
 - Practice questions extracted from chapter notes, with show/hide answers
 - Ask a question and retrieve matching sentences from the selected saved chapter
-- Focus timer, session log, progress stats and data export
+- Focus timer with custom 1–180 minute sessions and completion chime
+- Session log, progress stats, backup export and responsive mobile navigation
 - Local browser saving and offline-friendly static website
 
 HONEST LIMITATION
@@ -36,3 +37,13 @@ Tasks, notes, and study progress are saved in the browser on that device. They d
 
 SECURITY
 This is a static frontend. Do not put passwords, private API keys, or sensitive personal information into it. Public deployments are visible to anyone with the URL.
+
+
+UPDATE v2 FEATURES
+- Import chapter files from mobile or laptop: PDF (text-based), TXT, MD, CSV, HTML, JSON, LOG, XML. Scanned PDFs need OCR and are not supported for extraction.
+- Imported chapter becomes a saved note; then select it and tap Summarize chapter. Generated summaries are saved alongside the note in that browser.
+- Custom focus timer from 1 to 180 minutes, with quick presets for 15, 30, 45, 60 and 90 minutes.
+- The study helper is offline text extraction, not a full AI model.
+
+DEPLOY UPDATE
+Upload the updated project files to the existing GitHub repository (replace index.html and sw.js, and update README.txt). Vercel redeploys automatically after the commit. If an old version remains on your phone, refresh the site or close/reopen the tab; service worker cache was bumped to v2.
