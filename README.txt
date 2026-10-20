@@ -52,3 +52,6 @@ V4 VISUAL UPDATE
 - Refined contrast, surfaces, borders, spacing and mobile layout.
 - Improved focus, study companion, note cards, navigation and timer controls styling.
 - This is a frontend styling update; existing browser-local data is not intentionally cleared.
+
+
+V5 additions: Exam Preparation Studio (source-text recognition quizzes), flashcards with spaced review scheduling, weak-topic tracking, and a planner for revision sessions and deadlines. These tools run locally in this browser. Quiz generation checks recognition of source sentences and is not a conceptual AI tutor.
